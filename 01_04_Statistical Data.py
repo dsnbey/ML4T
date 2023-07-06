@@ -15,6 +15,7 @@ def calculate_bollinger_bands(df, window_size=3, num_std=2):
     rolling_std.columns = ['Rolling ']
     upper_band = rolling_mean + (rolling_std * num_std)
     lower_band = rolling_mean - (rolling_std * num_std)
+
     return upper_band, lower_band, rolling_mean
 
 
