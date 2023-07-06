@@ -34,6 +34,7 @@ def stats(df: pd.DataFrame):
 if __name__ == "__main__":
     data = read_data()
     returns = compute_daily_returns(data)
+
     #stats_data = stats(data)
     #stats_returns = stats(returns)
     #print(stats_returns)
